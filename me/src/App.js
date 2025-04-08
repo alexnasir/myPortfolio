@@ -46,10 +46,6 @@ function App() {
           <Contact />
         </section>
       </main>
-
-      <footer className="text-center py-2 bg-gray-800 text-white">
-        <p>@Alex Nasiali 2025©</p>
-      </footer>
     </div>
   );
 }

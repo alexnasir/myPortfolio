@@ -4,14 +4,12 @@ import { FaGithub, FaFacebook, FaTwitter, FaWhatsapp, FaPhone, FaEnvelope } from
 
 const Contact = () => {
   return (
-    <div className="max-w-7xl mx-auto p-4 mt-16 bg-slate-100">
+    <div className="w-full mx-auto p-4 md:p-8 mt-16 bg-slate-100">
       <div className="flex flex-col md:flex-row gap-8">
         {/* Get in Touch Section */}
         <div className="w-full md:w-1/2">
-        <h1>Contact</h1>
-          <h1 className="text-3xl font-bold text-blue-600 mb-4">Get in Touch with me:</h1>
-          <div className="flex flex-wrap gap-6 mb-6">
-            {/* GitHub */}
+          <h1 className="text-2xl md:text-3xl font-bold text-blue-600 mb-4">Get in Touch with me:</h1>
+          <div className="flex flex-wrap gap-4 md:gap-6 mb-6">
             <motion.a
               href="https://github.com/alexnasir"
               target="_blank"
@@ -20,34 +18,31 @@ const Contact = () => {
               whileTap={{ scale: 1.1 }}
               className="flex flex-col items-center"
             >
-              <FaGithub size={32} className="text-gray-700" />
-              <span className="mt-2 text-sm text-gray-700">GitHub</span>
+              <FaGithub size={24} className="text-gray-700" />
+              <span className="mt-2 text-xs md:text-sm text-gray-700">GitHub</span>
             </motion.a>
-            {/* Facebook */}
             <motion.a
-              href="https://www.facebook.com/alexnasir"
+              href="https://www.facebook.com/alexnasilife"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1 }}
               className="flex flex-col items-center"
             >
-              <FaFacebook size={32} className="text-blue-700" />
-              <span className="mt-2 text-sm text-gray-700">Facebook</span>
+              <FaFacebook size={24} className="text-blue-700" />
+              <span className="mt-2 text-xs md:text-sm text-gray-700">Facebook</span>
             </motion.a>
-            {/* X */}
             <motion.a
-              href="https://x.com/gee_bwoy"
+              href="https://x.com/AlexNasial2303"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1 }}
               className="flex flex-col items-center"
             >
-              <FaTwitter size={32} className="text-blue-400" />
-              <span className="mt-2 text-sm text-gray-700">X</span>
+              <FaTwitter size={24} className="text-blue-400" />
+              <span className="mt-2 text-xs md:text-sm text-gray-700">X</span>
             </motion.a>
-            {/* WhatsApp */}
             <motion.a
               href="https://wa.me/0713386680"
               target="_blank"
@@ -56,63 +51,64 @@ const Contact = () => {
               whileTap={{ scale: 1.1 }}
               className="flex flex-col items-center"
             >
-              <FaWhatsapp size={32} className="text-green-700" />
-              <span className="mt-2 text-sm text-gray-700">WhatsApp</span>
+              <FaWhatsapp size={24} className="text-green-700" />
+              <span className="mt-2 text-xs md:text-sm text-gray-700">WhatsApp</span>
             </motion.a>
-            {/* Phone */}
             <motion.a
               href="tel:0713386680"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1 }}
               className="flex flex-col items-center"
             >
-              <FaPhone size={32} className="text-green-700" />
-              <span className="mt-2 text-sm text-gray-700">Call</span>
+              <FaPhone size={24} className="text-green-700" />
+              <span className="mt-2 text-xs md:text-sm text-gray-700">0713386680</span>
             </motion.a>
-            {/* Email */}
             <motion.a
               href="mailto:alexnasiali45@gmail.com"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1 }}
               className="flex flex-col items-center"
             >
-              <FaEnvelope size={32} className="text-red-700" />
-              <span className="mt-2 text-sm text-gray-700">Email</span>
+              <FaEnvelope size={24} className="text-red-700" />
+              <span className="mt-2 text-xs md:text-sm text-gray-700">Email</span>
             </motion.a>
           </div>
         </div>
         {/* Contact Form */}
-        <div className="w-full md:w-1/2 ">
+        <div className="w-full md:w-1/2">
           <form className="flex flex-col gap-4">
             <input
               type="text"
               name="Name"
               placeholder="Your Name"
               required
-              className="p-2 border rounded bg-slate-500"
+              className="w-full p-2 border rounded bg-slate-500"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="p-2 border rounded bg-slate-500"
+              className="w-full p-2 border rounded bg-slate-500"
             />
             <textarea
               name="Message"
-              rows="9"
+              rows="6"
               placeholder="Your Message"
-              className="p-2 border rounded bg-slate-500"
+              className="w-full p-2 border rounded bg-slate-500"
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
+              className="w-full p-2 bg-blue-600 text-white rounded hover:bg-blue-700"
             >
               Submit
             </button>
           </form>
         </div>
       </div>
+      <footer className="w-full text-center py-4 bg-gray-800 text-white mt-8">
+            <p>@Alex Nasiali 2025©</p>
+          </footer>
     </div>
   );
 };
