@@ -8,6 +8,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row gap-8">
         {/* Get in Touch Section */}
         <div className="w-full md:w-1/2">
+        <h1>Contact</h1>
           <h1 className="text-3xl font-bold text-blue-600 mb-4">Get in Touch with me:</h1>
           <div className="flex flex-wrap gap-6 mb-6">
             {/* GitHub */}

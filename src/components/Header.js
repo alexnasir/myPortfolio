@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 
-function Header() {
+function Header({ navItems }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -11,85 +10,32 @@ function Header() {
         <div className="flex justify-between items-center">
           {/* Hamburger icon for mobile */}
           <button
-            className="block md:hidden text-white"
+            className="block md:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <FiMenu size={24} />
           </button>
           {/* Navigation links */}
           <ul
-            className={`md:flex md:justify-end ${
+            className={`md:flex md:justify-end md:items-center w-full ${
               isMenuOpen
                 ? 'flex flex-col absolute top-full left-0 w-full bg-gray-800'
-                : 'hidden'
+                : 'hidden md:flex'
             }`}
           >
-            <li className="md:mx-4">
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  `block md:inline py-2 text-white ${
-                    isActive ? 'border-b-2 border-[#9ff0f0]' : ''
-                  }`
-                }
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="md:mx-4">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `block md:inline py-2 text-white ${
-                    isActive ? 'border-b-2 border-[#9ff0f0]' : ''
-                  }`
-                }
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="md:mx-4">
-              <NavLink
-                to="/skills"
-                className={({ isActive }) =>
-                  `block md:inline py-2 text-white ${
-                    isActive ? 'border-b-2 border-[#9ff0f0]' : ''
-                  }`
-                }
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Skills
-              </NavLink>
-            </li>
-            <li className="md:mx-4">
-              <NavLink
-                to="/project"
-                className={({ isActive }) =>
-                  `block md:inline py-2 text-white ${
-                    isActive ? 'border-b-2 border-[#9ff0f0]' : ''
-                  }`
-                }
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li className="md:mx-4">
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `block md:inline py-2 text-white ${
-                    isActive ? 'border-b-2 border-[#9ff0f0]' : ''
-                  }`
-                }
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </NavLink>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.name} className="md:mx-4">
+                <button
+                  onClick={() => {
+                    item.action();
+                    setIsMenuOpen(false);
+                  }}
+                  className="block md:inline py-2 text-white hover:text-blue-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                >
+                  {item.name}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>
