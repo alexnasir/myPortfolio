@@ -8,16 +8,14 @@ function Header({ navItems }) {
     <header className="fixed top-0 left-0 w-full bg-gray-800 z-10 p-4">
       <nav>
         <div className="flex justify-between items-center">
-          {/* Hamburger icon for mobile */}
           <button
             className="block md:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <FiMenu size={24} />
           </button>
-          {/* Navigation links */}
           <ul
-            className={`md:flex md:justify-end md:items-center w-full ${
+            className={`md:flex md:justify-end md:items-center w-full transition-all duration-300 ease-in-out ${
               isMenuOpen
                 ? 'flex flex-col absolute top-full left-0 w-full bg-gray-800'
                 : 'hidden md:flex'
