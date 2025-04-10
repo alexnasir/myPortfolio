@@ -14,8 +14,8 @@ const About = () => {
         </div>
         <div className="md:w-1/2">
           <p className="text-sm md:text-base text-gray-700 mb-6">
-          Aspiring Fullstack Developer
-with expertise in HTML, CSS-Tailwind, React, JavaScript,
+          I am an aspiring Fullstack Developer
+with expertise and hand-on experience in building full-stack applications using HTML, CSS-Tailwind, React, JavaScript,
 Flask, Python, and SQL. Passionate about building
 scalable web applications, optimizing performance,
 and implementing secure authentication systems.
