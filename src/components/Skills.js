@@ -42,8 +42,8 @@ const Skills = () => {
     },
     {
       title: 'Tools',
-      description: '.',
-      iconUrl: 'https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/mysql/mysql-original.svg',
+      description: 'Git,Figma,Postman.',
+      iconUrl: 'https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/figma/figma-original.svg',
     },
     
   ];

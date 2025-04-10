@@ -23,7 +23,7 @@ const handleClick = () => {
           </div>
           <br />
           I'm{' '}
-          <DecryptedText
+          <DecryptedText className="text-blue-500"
             text="Alex Nasiali"
             animateOn="view"
             revealDirection="center"
