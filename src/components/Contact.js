@@ -60,7 +60,7 @@ const Contact = () => {
               className="flex flex-col items-center"
             >
               <FaPhone size={24} className="text-green-700" />
-              <span className="mt-2 text-xs md:text-sm text-gray-700">0713386680</span>
+              <span className="mt-2 text-xs md:text-sm text-gray-700">+254713386680</span>
             </motion.a>
             <motion.a
               href="mailto:alexnasiali45@gmail.com"

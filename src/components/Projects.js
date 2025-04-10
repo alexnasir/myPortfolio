@@ -7,24 +7,28 @@ const projects = [
     name: 'Nasiali Portfolio',
     description: 'A responsive web application built with React and Node.js',
     liveLink: 'https://my-portfolio-gamma-nine-94.vercel.app',
+    image: 'Screenshot from 2025-04-10 10-13-32.png', 
   },
   {
     id: 2,
     name: 'Swift Shop',
     description: 'E-commerce platform with real-time inventory management',
     liveLink: 'https://swift-shop-brown.vercel.app',
+    image: 'Screenshot from 2025-04-08 16-56-58.png', 
   },
   {
     id: 3,
-    name: 'AIM',
-    description: 'Interactive dashboard with data visualization',
+    name: 'Landers',
+    description: 'Interactive landing page with ',
     liveLink: 'https://project3.com',
+    image: 'Screenshot from 2025-04-10 10-17-27.png', 
   },
   {
     id: 4,
     name: 'LopDrinks',
     description: 'Cofee specicialized fullstack recipe application',
     liveLink: 'https://project4.com',
+    image: 'Screenshot from 2025-04-10 10-26-05.png', 
   },
 ];
 
@@ -62,6 +66,11 @@ const Projects = () => {
             custom={index}
             className="bg-white rounded-lg p-4 md:p-6 flex flex-col gap-4 border border-gray-200"
           >
+            <img
+              src={project.image}
+              alt={`${project.name} preview`}
+              className="w-full h-40 object-cover rounded-t-lg"
+            />
             <h3 className="text-xl md:text-2xl m-0 text-gray-800">{project.name}</h3>
             <p className="text-sm md:text-base text-gray-600 m-0 flex-grow">{project.description}</p>
             <a
