@@ -49,11 +49,7 @@ const Contact = () => {
     }
 
     try {
-      const message = `New Contact Form Submission:
-Name: ${formData.Name}
-Email: ${formData.email}
-Phone: ${formData.telephone}
-Message: ${formData.Message}`;
+      const message = `Hello, I’m interested in your software engineering services ${formData.Message}`;
 
       const yourNumber = '+254713386680';
       const whatsappUrl = `https://wa.me/${yourNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
