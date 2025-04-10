@@ -2,7 +2,7 @@ import React from 'react';
 import DecryptedText from './DecryptedText';
 
 const Home = () => {
-const cvUrl = 'alexnasialiCv.pdf';
+const cvUrl = 'alexnasialiCV.pdf';
 
 const handleClick = () => {
    window.open(cvUrl, '_blank');
