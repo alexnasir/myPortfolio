@@ -11,8 +11,8 @@ const Home = () => {
               text="WELCOME"
               animateOn="view"
               revealDirection="center"
-              speed={50} // Faster updates (50ms between changes)
-              maxIterations={3} // Quick reveal after 3 scrambles
+              speed={50} 
+              maxIterations={3}
             />
           </div>
           <br />

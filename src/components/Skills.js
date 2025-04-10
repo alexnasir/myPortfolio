@@ -9,7 +9,7 @@ const Skills = () => {
     },
     {
       title: 'CSS',
-      description: 'Responsive and modern designs.',
+      description: 'Responsive and modern designs using semantic and Tailwind css.',
       iconUrl: 'https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/css3/css3-original.svg',
     },
     {
@@ -40,6 +40,12 @@ const Skills = () => {
       description: 'MySQL and PostgreSQL management.',
       iconUrl: 'https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/mysql/mysql-original.svg',
     },
+    {
+      title: 'Tools',
+      description: '.',
+      iconUrl: 'https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/mysql/mysql-original.svg',
+    },
+    
   ];
 
   const otherSkills = [

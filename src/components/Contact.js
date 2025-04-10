@@ -43,7 +43,7 @@ const Contact = () => {
               <span className="mt-2 text-xs md:text-sm text-gray-700">X</span>
             </motion.a>
             <motion.a
-              href="https://wa.me/0713386680"
+              href="https://wa.me/+254713386680"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
@@ -54,7 +54,7 @@ const Contact = () => {
               <span className="mt-2 text-xs md:text-sm text-gray-700">WhatsApp</span>
             </motion.a>
             <motion.a
-              href="tel:0713386680"
+              href="tel:+254713386680"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1 }}
               className="flex flex-col items-center"

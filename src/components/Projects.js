@@ -4,9 +4,9 @@ import React from 'react';
 const projects = [
   {
     id: 1,
-    name: 'LopDrinks',
+    name: 'Nasiali Portfolio',
     description: 'A responsive web application built with React and Node.js',
-    liveLink: 'https://project-one-example.com',
+    liveLink: 'https://my-portfolio-gamma-nine-94.vercel.app',
   },
   {
     id: 2,
@@ -18,13 +18,13 @@ const projects = [
     id: 3,
     name: 'AIM',
     description: 'Interactive dashboard with data visualization',
-    liveLink: 'https://project-three-example.com',
+    liveLink: 'https://project3.com',
   },
   {
     id: 4,
-    name: 'Students Grading System',
-    description: 'Mobile-first portfolio website with animations',
-    liveLink: 'https://project-four-example.com',
+    name: 'LopDrinks',
+    description: 'Cofee specicialized fullstack recipe application',
+    liveLink: 'https://project4.com',
   },
 ];
 
