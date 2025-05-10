@@ -18,17 +18,17 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Landersᶠᵉᵃᵗᵘʳᵉᵈ',
+    name: 'Landers',
     description: 'Interactive landing page with React and Tailwind Css',
     liveLink: 'https://landn.netlify.app',
     image: 'Screenshot from 2025-04-10 10-17-27.png', 
   },
   {
     id: 4,
-    name: 'LopDrinks(up-coming)',
+    name: 'LopCafe',
     description: 'Cofee specicialized fullstack recipe application',
-    liveLink: 'https://project4.com',
-    image: 'Screenshot from 2025-04-10 10-26-05.png', 
+    liveLink: 'https://lopdrinks-blwa-5ky8hytoj-alexs-projects-7f85cd3e.vercel.app/',
+    image: 'a1.png', 
   },
 ];
 

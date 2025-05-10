@@ -19,7 +19,7 @@ const Skills = () => {
     },
     {
       title: 'React',
-      description: 'Building full-stack applications.',
+      description: 'Building full-stack applications using React.js & Next.js.',
       iconUrl: 'https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/react/react-original.svg',
     },
   ];
@@ -32,7 +32,7 @@ const Skills = () => {
     },
     {
       title: 'Python',
-      description: 'Scripting and Flask development.',
+      description: 'Flask development.',
       iconUrl: 'https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/python/python-original.svg',
     },
     {

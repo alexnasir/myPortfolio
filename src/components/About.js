@@ -5,9 +5,9 @@ const About = () => {
     <div className="w-full mx-auto p-4 md:p-8 bg-slate-200">
       <h1 className="text-2xl md:text-3xl font-bold text-blue-600 mb-4 m-4 md:m-10">About Me</h1>
       <div className="flex flex-col md:flex-row gap-6">
-        <div className="md:w-1/2 mt-2">
+        <div className="md:w-1/2 mt-2 h-4">
           <img
-            src="Screenshot from 2025-04-08 17-21-39.png"
+            src="bg.jpg"
             alt="Alex Nasiali"
             className="w-full md:max-w-md h-auto rounded-lg shadow-md mx-auto"
           />
