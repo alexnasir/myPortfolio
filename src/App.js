@@ -26,23 +26,23 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="min-h-screen  bg-gray-100">
       <Header navItems={navItems} />
       
       <main className="flex-grow">
-        <section ref={homeRef} className="min-h-screen p-8">
+        <section ref={homeRef} className="min-h-screen">
           <Home />
         </section>
-        <section ref={aboutRef} className="min-h-screen p-8">
+        <section ref={aboutRef} className="min-h-screen">
           <About />
         </section>
-        <section ref={skillsRef} className="min-h-screen p-8">
+        <section ref={skillsRef} className="min-h-screen">
           <Skills />
         </section>
-        <section ref={projectsRef} className="min-h-screen p-8">
+        <section ref={projectsRef} className="min-h-screen">
           <Projects />
         </section>
-        <section ref={contactRef} className="min-h-screen p-8">
+        <section ref={contactRef} className="min-h-screen">
           <Contact />
         </section>
       </main>
